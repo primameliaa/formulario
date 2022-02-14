@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="php" href="web.php">
+</head>
+
+
+
+<body>
+    <section>
+        <form action="web.php" method="get">
+            <h2>Accede a tu Área Clientes</h2>
+            <legend>
+                <h3>Elige tu documento</h3>
+            </legend>
+            <p><input type="radio" name="DNIpas" id="DNI" value="DNI" checked>DNI o Tarjeta de residencia</p>
+            <p><input type="radio" name="DNIpas" id="pasaporte" value="pasaporte">Pasaporte</p>
+            <legend>
+                <p>Número de documento</p>
+            </legend>
+            <input class="recuadro" type="text" placeholder="DNI o Tarjeta de residencia">
+            <legend>
+                <p>Fecha de Nacimiento</p>
+            </legend>
+            <input class="recuadro" type="date">
+            <br><br>
+            <p><input type="checkbox">Recordar</p>
+            <input class="naranja" type="submit" value="Entrar">
+            <a href="">Acceder con DNI electrónico</a>
+            <a href="">Más información sobre seguridad</a>
+        </form>
+    </section>
+
+    <hr>
+
+    <section>
+        <form action="web.php" method="get">
+            <legend>
+                <h2>Crear Usuario</h2>
+            </legend>
+            <input class="recuadro2" type="text" placeholder="Nombre (como sale en el DNI)">
+            <input class="izquierda" type="text" placeholder="1º apellido (como sale en el DNI)">
+            <input class="derecha" type="text" placeholder="2º apellido (como sale en el DNI)">
+            <select class="lista" name="tipodoc">
+                <option value="1">DNI/NIF/CERT.AEAT</option>
+            </select>
+            <input class="dererecha" type="text" placeholder="Número de documento">
+            <select class="lista" name="movil">
+                <option value="1">MOVIL</option>
+            </select>
+            <input class="derecha" type="text" placeholder="Email">
+        </form>
+    </section>
+
+    <hr>
+
+    <section class="estrecho">
+        <form action="web.php" method="get">
+            <h2 class="centrado">¿Eres nuevo?</h2>
+            <p class="centrado">Regístrate para guardar tu información y hacer tus pedidos</p>
+            <br>
+            <legend>
+                <p>Email</p>
+            </legend>
+            <input class="recuadro3" type="text" size="40" placeholder="Introduce tu email">
+            <legend>
+                <p>Nº Teléfono</p>
+            </legend>
+            <input class="recuadro3" type="text" placeholder="Tu teléfono">
+            <legend>
+                <p>Contraseña</p>
+            </legend>
+            <input class="recuadro3" type="password" placeholder="Introduce tu contraseña">
+            <legend>
+                <p>Confirmar contraseña</p>
+            </legend>
+            <input class="recuadro3" type="password" placeholder="Confirmar contraseña">
+            <p><input type="checkbox">He leído y acepto la <b>Política de privacidad</b></p>
+            <p><input type="checkbox">Sí, acepto recibir comunicaciones comerciales y ofertas personalizadas.</p>
+            <input class="verde" type="submit" value="Crea tu cuenta">
+        </form>
+    </section>
+    
+</body>
+</html>
